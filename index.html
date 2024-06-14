@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Huella de Carbono</title>
+    <link rel="stylesheet" href="Calculadora.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculadora de Huella de Carbono</h1>
+        <div class="activity">
+            <label for="activity">Selecciona una actividad:</label>
+            <select id="activity">
+                <option value="car">Conducir un automóvil</option>
+                <option value="electricity">Consumo de electricidad</option>
+                <option value="flight">Vuelo en avión</option>
+                <!-- Agrega más opciones aquí según las actividades que quieras incluir -->
+            </select>
+            <input type="number" id="quantity" placeholder="Cantidad">
+            <span id="unit">kg CO2eq</span>
+            <button onclick="calculateCarbonFootprint()">Calcular</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <div id="texto">
+        <p1>¿Cómo funciona esta calculadora de huella de carbono?
+
+Selecciona una actividad: Elige una actividad de la lista desplegable, como conducir un automóvil, consumir electricidad en casa o volar en avión.
+
+Ingresa la cantidad asociada: Introduce la cantidad de esa actividad que realizas. Por ejemplo, si estás calculando las emisiones por conducir, puedes ingresar la distancia en kilómetros recorrida en tu último viaje.
+
+Haz clic en "Calcular": Una vez que hayas seleccionado la actividad y la cantidad, haz clic en el botón "Calcular".
+
+Obtén tu huella de carbono: La calculadora calculará automáticamente la cantidad de emisiones de carbono asociadas a esa actividad y te mostrará el resultado en kilogramos de CO2 equivalente.
+
+¡Es así de simple! Utiliza esta calculadora para tener una idea del impacto ambiental de tus acciones diarias y cómo puedes tomar decisiones más sostenibles para reducir tu huella de carbono.</p1>
+    </div>
+    <script src="Calculadora.js"></script>
+</body>
+</html>
